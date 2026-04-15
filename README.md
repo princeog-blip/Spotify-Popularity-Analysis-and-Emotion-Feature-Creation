@@ -16,12 +16,15 @@ The dataset was obtained through Kaggle.com and can be accessed with the followi
 7. Gradient Boosting Regression
 8. Logistic Regression
 
-## Key Finding
+## Key Findings
 The data-driven approach of K-Means clustering to create the emotion feature performed slightly worse than the theory driven approach of using a predefined threshold of valence and energy (previous research proves this method) when classifing emotion with Random Forest and SVM. 
 
 Popularity is extremly hard to predict with the given dataset. The numerical audio features tested with Linear, Lasso, and Gradient Boosting Regression all had very low R-squared values indicating poor performance with predicting popularity. Logistic Regression appread to work well at first with the categorical features, but after further analysis, it was found the classes are actually very imbalanced and Logictic Regression only predicted the majority class each time. 
 
 Overall, other outside factors such as marketing or social trends are likely to play an effect on popuarity, but this is not included in this dataset. Only audio features and features engineered from audio features alone are not enough to effectively predict popularity. 
+
+## Files
+Attached ipynb contains all code and visuals: 'Spotify_Analysis.ipynb'
 
 ## Author
 Olivia Prince
